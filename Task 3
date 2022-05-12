@@ -1,0 +1,33 @@
+Write a “person” class to hold all the details.
+Ans:-
+class Person{
+   static CompanyName ="Guvi";
+   constructor(Name , Age , City , PhoneNo , EmailId , Salary){
+      this.Name = Name;
+      this.Age = Age;
+      this.City = City;
+      this.PhoneNo = PhoneNo;
+      this.EmailId = EmailId;
+      this.Salary = Salary
+   }
+   getDetails(){
+      let personData='
+      Name : ${this.Name}
+      Age : ${this.Age}
+      City : ${this.City}
+      PhoneNo : ${this.PhoneNo}
+      EmailId : ${this.EmailId}
+      Salary : ${this.Salary}
+      ';
+      console.log(personData);
+   }
+   static getCompanyName(){
+      console.log(person.CompanyName);
+      }
+    
+   class Employee extend Person{
+   
+   }
+   let person1= newPerson("John",24,"Mumbai",2465385723,"john23@gmail.com",2500000);
+ person1.getDetails();
+      
