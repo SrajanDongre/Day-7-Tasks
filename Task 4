@@ -1,0 +1,18 @@
+Write a class to calculate uber price
+Ans:-
+class Uber {
+   constructor(Name , Car , Distance , Rate){
+      this.Customer_Name= Name;
+      this.Car= Car;
+      this.Distance= Distance;
+      this.Rate= Rate;
+   }
+   fare(){
+      if(this.Distance<20)
+      return"The fare is 100 rupees";
+      else
+      return"The fare is "+(100+(this.Distance-20)*this.Rate)+" rupees";
+   }
+}
+let uber1 = new Uber("Sunny","BMW",12,10);
+console.log(uber1.fare());
