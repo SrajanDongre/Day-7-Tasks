@@ -46,8 +46,9 @@ class movies {
 }
 movies.rating= PG
 var movie = new Movie('Spider Man', 'Marvel Studios', 10);
-console.log(movie){rating= PG};
-
+getrating(){
+    console.log(movies, rating=PG)
+}
 
 (d)
 var moviee =new movies('casino royale','eon productions','pg13');
