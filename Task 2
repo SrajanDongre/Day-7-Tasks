@@ -1,0 +1,48 @@
+Convert the UML diagram to Typescript class. - use number for double
+
+Ans:-
+class Circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+    Circle(){
+        console.log("this is circle ");
+    }
+    Circle(radius){
+        console.log("method overriding ");
+    }
+    Circle(radius,color){
+        console.log(this.radius,this.color)
+    }
+    getradius(){
+        console.log("the radius of circle is "+this.radius)
+    }
+    setradius(newradius){
+        this.radius=newradius;
+    }
+    getcolor(){
+        console.log("the color of the circle is "+this.color);
+    }
+    setcolor(newcolor){
+        this.color=newcolor;
+    }
+    getarea(){
+        console.log('area of circle is '+(Math.PI*Math.pow(this.radius,2)))
+    }
+    getcircumference(){
+        console.log('circumference of circle is '+(2*Math.PI*this.radius))
+    }
+
+}
+
+var newcircle = new Circle(1,'green');
+newcircle.getradius();
+newcircle.setradius(3);
+newcircle.getradius();
+newcircle.getcolor();
+newcircle.setcolor('red');
+newcircle.getcolor();
+newcircle.getarea();
+newcircle.getcircumference();
+
